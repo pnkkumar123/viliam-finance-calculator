@@ -1,0 +1,45 @@
+{
+  "id": "loan",
+  "title": "Loan EMI Calculator",
+  "description": "Calculate your monthly loan EMI, total interest, and total payment.",
+  "fields": [
+    { "name": "amount", "label": "Loan Amount (€)", "type": "number" },
+    { "name": "rate", "label": "Annual Interest Rate (%)", "type": "number" },
+    { "name": "years", "label": "Loan Term (Years)", "type": "number" }
+  ],
+  "formula": "(amount * (rate / 12 / 100)) / (1 - (1 + rate / 12 / 100) ^ (-years * 12))",
+  "outputLabel": "Monthly EMI (€)",
+  "article": [
+  {
+    "heading": "Overview",
+    "content": "This loan calculator helps individuals and businesses estimate their monthly loan repayment (EMI), total interest payable, and total amount due over the loan term. It is useful for planning home loans, car loans, education loans, or any type of personal borrowing."
+  },
+  {
+    "heading": "What You’ll Learn",
+    "list": [
+      "How to calculate monthly EMI (Equated Monthly Installment) for a loan.",
+      "How interest rate and loan tenure affect total repayment.",
+      "The difference between total payment and total interest.",
+      "How to plan borrowing to maintain healthy finances."
+    ]
+  },
+  {
+    "heading": "How to Calculate Your Loan EMI",
+    "steps": [
+      "Enter the total loan amount, annual interest rate, and loan tenure (in years).",
+      "The calculator converts the annual rate to a monthly rate and tenure to months.",
+      "It applies the EMI formula: EMI = [P × r × (1 + r)^n] / [(1 + r)^n – 1], where P is principal, r is monthly interest rate, and n is number of months.",
+      "The result displays the monthly EMI, total payment, and total interest payable."
+    ]
+  },
+  {
+    "heading": "Formula Used",
+    "formula": "EMI = [P × r × (1 + r)^n] / [(1 + r)^n – 1]"
+  },
+  {
+    "heading": "Why Loan Planning Matters",
+    "content": "Loan planning helps borrowers understand repayment obligations and make informed financial decisions. By comparing different loan terms and interest rates, users can identify the most cost-effective borrowing option and avoid long-term debt stress."
+  }
+]
+
+}

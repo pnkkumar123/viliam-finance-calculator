@@ -1,0 +1,42 @@
+{
+  "id": "roi",
+  "title": "ROI Calculator",
+  "description": "Calculate your Return on Investment (ROI) percentage to measure profitability.",
+  "fields": [
+    { "name": "initial", "label": "Initial Investment (€)", "type": "number" },
+    { "name": "final", "label": "Final Value (€)", "type": "number" }
+  ],
+  "formula": "((final - initial) / initial) * 100",
+  "outputLabel": "ROI (%)",
+  "article": [
+  {
+    "heading": "Overview",
+    "content": "This ROI (Return on Investment) calculator helps businesses, marketers, and investors measure the profitability and efficiency of their investments. It compares the net gain or loss relative to the initial cost, helping users determine whether an investment is performing well or needs adjustment."
+  },
+  {
+    "heading": "What You’ll Learn",
+    "list": [
+      "How to calculate ROI to measure investment profitability.",
+      "The meaning of positive and negative ROI values.",
+      "How ROI helps in making data-driven business and investment decisions."
+    ]
+  },
+  {
+    "heading": "How to Calculate ROI",
+    "steps": [
+      "Enter your initial investment amount and the final value after the investment period.",
+      "Apply the ROI formula: ROI = [(Final Value – Initial Investment) / Initial Investment] × 100.",
+      "Interpret the result — a positive ROI means profit, while a negative ROI indicates loss."
+    ]
+  },
+  {
+    "heading": "Formula Used",
+    "formula": "ROI = [(Final Value – Initial Investment) / Initial Investment] × 100"
+  },
+  {
+    "heading": "Why ROI is Important",
+    "content": "ROI is one of the most widely used performance metrics in business and investing. It allows comparison between multiple investment options and helps assess marketing campaigns, assets, or projects. A higher ROI indicates greater profitability and efficient resource utilization."
+  }
+]
+
+}

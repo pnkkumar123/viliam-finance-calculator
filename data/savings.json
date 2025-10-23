@@ -1,0 +1,43 @@
+{
+  "id": "savings",
+  "title": "Savings Calculator",
+  "description": "Estimate your total savings and interest earned over time with monthly deposits.",
+  "fields": [
+    { "name": "monthly", "label": "Monthly Saving (€)", "type": "number" },
+    { "name": "rate", "label": "Annual Interest Rate (%)", "type": "number" },
+    { "name": "years", "label": "Years", "type": "number" }
+  ],
+  "formula": "monthly * (((1 + rate / 1200) ^ (12 * years) - 1) / (rate / 1200))",
+  "outputLabel": "Future Value (€)",
+  "article": [
+  {
+    "heading": "Overview",
+    "content": "This savings calculator helps individuals and families estimate how much their savings will grow over time based on monthly contributions, interest rates, and saving duration. It’s ideal for planning long-term goals like retirement, education funds, or major purchases."
+  },
+  {
+    "heading": "What You’ll Learn",
+    "list": [
+      "How monthly contributions and compounding interest affect total savings.",
+      "The formula for calculating the future value of savings.",
+      "The importance of consistent saving for long-term financial goals."
+    ]
+  },
+  {
+    "heading": "How to Calculate Savings Growth",
+    "steps": [
+      "Enter your monthly saving amount, annual interest rate, and duration in years.",
+      "Apply the formula: FV = P × [(1 + r/n)ⁿᵗ – 1] / (r/n).",
+      "The result shows your total accumulated savings, including interest earned."
+    ]
+  },
+  {
+    "heading": "Formula Used",
+    "formula": "FV = P × [(1 + r/n)ⁿᵗ – 1] / (r/n)"
+  },
+  {
+    "heading": "Why Regular Saving Matters",
+    "content": "Regular saving builds discipline and financial stability. Even small monthly contributions can grow into a significant amount over time due to the power of compounding. This calculator helps visualize how steady saving leads to long-term financial independence."
+  }
+]
+
+}

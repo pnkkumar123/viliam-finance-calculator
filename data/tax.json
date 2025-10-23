@@ -1,0 +1,51 @@
+{
+  "id": "tax",
+  "title": "Income Tax Calculator (Slovakia)",
+  "description": "Estimate annual income tax and net income based on Slovak personal income tax rules.",
+  "parameters": {
+    "nonTaxableAllowance": 4703.64,
+    "lowerBracketLimit": 47360.84,
+    "lowerRate": 0.19,
+    "higherRate": 0.25
+  },
+  "fields": [
+    { "name": "grossIncome", "label": "Annual Gross Income (€)", "type": "number" },
+    { "name": "deductions", "label": "Tax Allowances / Deductions (€)", "type": "number" }
+  ],
+"formula": "if(grossIncome - deductions - nonTaxableAllowance <= 0, 0, if(grossIncome - deductions - nonTaxableAllowance <= lowerBracketLimit, (grossIncome - deductions - nonTaxableAllowance) * lowerRate, lowerBracketLimit * lowerRate + (grossIncome - deductions - nonTaxableAllowance - lowerBracketLimit) * higherRate))"
+,
+  "outputLabel": "Estimated Income Tax (€)",
+  "article": [
+  {
+    "heading": "Overview",
+    "content": "This Slovak income tax calculator helps individuals estimate their annual tax liability and net income according to the 2024 Slovak personal income tax regulations. It considers income brackets, personal allowances, and deductions to calculate total tax due accurately."
+  },
+  {
+    "heading": "What You’ll Learn",
+    "list": [
+      "How to calculate personal income tax in Slovakia.",
+      "The meaning of tax allowances and deductions.",
+      "The difference between gross and net income.",
+      "How tax brackets affect the amount you pay."
+    ]
+  },
+  {
+    "heading": "How to Calculate Slovak Income Tax",
+    "steps": [
+      "Enter your annual gross income and any applicable deductions.",
+      "Subtract the non-taxable allowance (currently €4,703.64) from your gross income to find taxable income.",
+      "If the taxable income is below €47,360.84, apply a 19% tax rate; otherwise, apply 19% up to that threshold and 25% for the remaining amount.",
+      "The result shows your estimated annual tax, net income, and effective tax rate."
+    ]
+  },
+  {
+    "heading": "Formula Used",
+    "formula": "Tax = (Taxable Income × 19%) + (Income Above €47,360.84 × 25%)"
+  },
+  {
+    "heading": "Understanding Slovak Taxation",
+    "content": "Slovakia’s progressive tax system ensures that higher income earners contribute a larger portion in taxes. Using this calculator helps individuals and freelancers plan their finances better by understanding their net take-home pay after deductions and allowances."
+  }
+]
+
+}

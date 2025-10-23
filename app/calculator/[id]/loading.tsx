@@ -1,0 +1,10 @@
+export default function Loading() {
+  return (
+    <div className="flex items-center justify-center h-screen bg-gray-50">
+      <div className="text-center">
+        <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
+        <p className="text-gray-700 font-medium">Loading calculator...</p>
+      </div>
+    </div>
+  );
+}

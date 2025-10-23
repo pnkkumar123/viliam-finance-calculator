@@ -1,0 +1,46 @@
+{
+  "id": "interest",
+  "title": "Interest Calculator",
+  "description": "Compute compound interest based on your principal, rate, and time.",
+  "fields": [
+    { "name": "principal", "label": "Principal (€)", "type": "number" },
+    { "name": "rate", "label": "Annual Interest Rate (%)", "type": "number" },
+    { "name": "years", "label": "Time (Years)", "type": "number" },
+    { "name": "compound", "label": "Compounding per Year", "type": "number" }
+  ],
+  "formula": "principal * ((1 + (rate / (100 * compound))) ^ (compound * years) - 1)",
+   "outputLabel": "Compound Interest (₹)",
+  "article": [
+  {
+    "heading": "Overview",
+    "content": "This compound interest calculator helps investors, savers, and financial planners determine how their money grows over time when interest is reinvested. It shows how small, consistent investments can result in exponential growth through compounding."
+  },
+  {
+    "heading": "What You’ll Learn",
+    "list": [
+      "How compound interest differs from simple interest.",
+      "How compounding frequency (monthly, quarterly, annually) affects returns.",
+      "The impact of time and interest rate on total growth.",
+      "Why compounding is called the 'eighth wonder of the world'."
+    ]
+  },
+  {
+    "heading": "How to Calculate Compound Interest",
+    "steps": [
+      "Enter your principal amount, annual interest rate, compounding frequency, and time period in years.",
+      "The calculator applies the formula: A = P × (1 + r/n)^(n × t), where r is annual rate and n is compounding frequency.",
+      "It then subtracts the principal from the total amount to show the interest earned.",
+      "The output helps you compare how different rates and durations affect overall wealth growth."
+    ]
+  },
+  {
+    "heading": "Formula Used",
+    "formula": "Compound Interest = P × (1 + r/n)^(n × t) – P"
+  },
+  {
+    "heading": "The Power of Compounding",
+    "content": "Compound interest allows your investment to generate earnings on both the initial principal and previously earned interest. The earlier you start saving or investing, the more powerful compounding becomes. This calculator helps visualize that growth and plan smarter long-term investments."
+  }
+]
+
+}
